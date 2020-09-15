@@ -1,3 +1,1 @@
-#Programação funcional em Haskell.
-
-adin
+### Programação funcional em Haskell.
