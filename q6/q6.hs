@@ -7,7 +7,7 @@ executaAux ((c,v):xs) n
     | c == "Multiplica"       = executaAux xs (n*v)
     | c == "Soma"             = executaAux xs (n+v)
     | c == "Subtrai"          = executaAux xs (n-v)
-    | c == "Divide" && v /= 0 = executaAux xs (div n 2) 
+    | c == "Divide" && v /= 0 = executaAux xs (div n v) 
     | otherwise               = -666
 
 executa :: [(Comando, Valor)] -> Int
