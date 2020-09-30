@@ -40,7 +40,7 @@ logMes :: String -> String -> Double
 logMes mes fatura = resultado
     where resultado = sum [d | (a,b,c,d) <- (tuplasFinal fatura), mes == b]
 
-main :: IO()
+main :: IO ()
 main = do
     a <- getLine
     b <- getLine

@@ -13,7 +13,7 @@ executaAux ((c,v):xs) n
 executa :: [(Comando, Valor)] -> Int
 executa lista  = executaAux lista 0 
 
-main :: IO()
+main :: IO ()
 main = do
     a <- getLine
     let result = executa (read a)

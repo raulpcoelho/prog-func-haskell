@@ -51,7 +51,7 @@ minMaxCartao :: String -> (Double, Double)
 minMaxCartao fatura = (menor v, maior v)
     where v = valores (tuplasFinal fatura)
 
-main :: IO()
+main :: IO ()
 main = do
     a <- getLine
     let result = minMaxCartao a

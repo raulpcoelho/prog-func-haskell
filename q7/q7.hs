@@ -4,7 +4,7 @@ mul2 [] (y:ys)     = 0 : mul2 [] ys
 mul2 (x:xs) []     = 0 : mul2 xs []
 mul2 (x:xs) (y:ys) = x*y : mul2 xs ys
 
-main :: IO()
+main :: IO ()
 main = do
     sa <- getLine
     let a = read sa :: [Int]
